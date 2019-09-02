@@ -23,13 +23,13 @@ namespace InvestigationTask
 
                 no2 = Random;
 
-                if (no1 > 50)
+                if (no1 > 20)
                 {
                     ans = no1 - no2;
 
                     calculations[i] = no1.ToString() + "-" + no2.ToString() + "=" + ans.ToString();
                 }
-                else if (no1 > 100)
+                else if (no1 > 150)
                 {
                     ans = no1 + no2;
 
