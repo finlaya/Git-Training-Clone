@@ -23,13 +23,13 @@ namespace InvestigationTask
 
                 no2 = Random;
 
-                if (no1 > 20)
+                if (no1 > 100)
                 {
                     ans = no1 - no2;
 
                     calculations[i] = no1.ToString() + "-" + no2.ToString() + "=" + ans.ToString();
                 }
-                else if (no1 > 150)
+                else if (no1 > 300)
                 {
                     ans = no1 + no2;
 
@@ -52,20 +52,20 @@ namespace InvestigationTask
 
                 do
                 {
-                    Console.WriteLine("\nType the equation for no) " + (i + 1));
+                    Console.WriteLine("\nPlease enter the equation for answer: " + (i + 1));
 
                     ans = Console.ReadLine();
 
                 } while (ans != calculations[i]);
             }
 
-            Console.WriteLine("\nCongratulations =) You've completed the exercise");
+            Console.WriteLine("\nWell done, you have completed this exercise");
             Console.ReadLine();
         }
 
         public static int Random
         {
-            get { return rnd.Next(1, 201); }
+            get { return rnd.Next(1, 250); }
         }
     }
 }
